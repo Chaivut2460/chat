@@ -41,7 +41,7 @@
 
         // ฟังก์ชันเริ่มต้นการแชท
         function startChat() {
-            displayMessage(': เป็นไงบ้างดีโอเคขึ้นไหม?', 'system');
+            displayMessage(': เป็นไงบ้างโอเคขึ้นไหม?', 'system');
             showOptions();
         }
 
@@ -61,17 +61,17 @@
             document.getElementById('options').style.display = 'none'; // ซ่อนตัวเลือก
             setTimeout(() => {
                 if (response === 'โอเค') {
-                    displayMessage('ระบบ: เราดีใจมากเลยที่เห็นคุณโอเค', 'system');
+                    displayMessage(': เราดีใจมากเลยที่เห็นคุณโอเค', 'system');
                     setTimeout(() => {
-                        displayMessage('ระบบ: คุณเก่งมากเลยนะ', 'system');
-                        displayImage(); // แสดงรูปภาพ
+                        displayMessage(': คุณเก่งมากเลยนะ', 'system');
+                        displayImage('bear.png'); // แสดงรูปภาพ
                     }, 3000); // หน่วงเวลา 3 วินาที
                 } else {
                     for (let i = 0; i < messages.length; i++) {
                         setTimeout(() => {
                             displayMessage(': ' + messages[i], 'system');
                             if (i === messages.length - 1) {
-                                displayImage(); // Show the image after the last message
+                                displayImage('bear.png'); // Show the image after the last message
                             }
                         }, i * 3000);
                     }
