@@ -1,0 +1,92 @@
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #FFDEB4, #FFC3A0); /* โทนสีอบอุ่น */
+  color: #333;
+}
+
+.phone-frame {
+  background-color: #FFFFFF;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 400px;
+  max-width: 90%;
+}
+
+.chat-container {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.name-input {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.name-input input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.option-btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #FF6B6B; /* สีชมพูอบอุ่น */
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  margin: 5px;
+}
+
+.option-btn:hover {
+  background-color: #FF4E4E;
+  transform: scale(1.05);
+}
+
+.message {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 80%;
+  line-height: 1.5;
+}
+
+.system-message {
+  background-color: #FFEDDA; /* สีพื้นหลังข้อความของระบบ */
+  text-align: left;
+}
+
+.user-message {
+  background-color: #D1E7DD; /* สีพื้นหลังข้อความของผู้ใช้ */
+  text-align: right;
+}
+
+.message-image {
+  width: 100px; /* ขนาดของรูปภาพ */
+  height: auto;
+  margin: 10px 0;
+  border-radius: 10px;
+}
