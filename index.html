@@ -64,14 +64,14 @@
                     displayMessage(': เราดีใจมากเลยที่เห็นคุณโอเค', 'system');
                     setTimeout(() => {
                         displayMessage(': คุณเก่งมากเลยนะ', 'system');
-                        displayImage('bear.png'); // แสดงรูปภาพ
+                       
                     }, 3000); // หน่วงเวลา 3 วินาที
                 } else {
                     for (let i = 0; i < messages.length; i++) {
                         setTimeout(() => {
                             displayMessage(': ' + messages[i], 'system');
                             if (i === messages.length - 1) {
-                                displayImage('bear.png'); // Show the image after the last message
+                              
                             }
                         }, i * 3000);
                     }
